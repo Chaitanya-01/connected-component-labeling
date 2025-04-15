@@ -161,6 +161,7 @@ int main(int argc, char **argv){
 
     cv::Mat labels_out = visualizeComponents(labels);
     cv::imshow("image", labels_out);
+    // cv::imwrite("./results/bin_ccl.png", labels_out);
     // cv::imshow("binary image", binaryImage);
     cv::waitKey(0);
     cv::destroyAllWindows();
